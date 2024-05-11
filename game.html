@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Game</title>
+    <!-- favicon on title bar  -->
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #d6afc2; ">
+    <!-- 
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section> #bbf5f5-->
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg" style="background-color: #eddef4 ; ">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <strong><span>Myth</span>Busters</strong>
+                </a>
+
+                <div class="d-lg-none">
+                    <a href="sign-in.html" class="bi bi-chat-dots" style="font-size: 30px;"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="learn.html">Learn</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mediafiles.botpress.cloud/3b93f420-3b18-4a25-9ca1-f579fd170879/webchat/bot.html" target = "_blank">Chat with us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="game.html">Lets Play</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Feedback</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-lg-block">
+                        <a href="https://mediafiles.botpress.cloud/3b93f420-3b18-4a25-9ca1-f579fd170879/webchat/bot.html" target="_blank" class="bi bi-chat-dots" style="font-size: 30px;"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="site-header d-flex justify-content-center align-items-center">
+
+        </header>
+        <div class= "container3" style =" width :100% ; height: 100% ; background-image: url('learnBG.jpg'); background-repeat: no-repeat; background-size:100% 100%;">
+        <div class="controls">
+            <div class="container5">
+                <div class="col-lg-11  col-md-12 col-sm-12  ">
+
+                    <div id="randomMyth">
+                       <button type="button" class=" displayb btn btn-light btn-sm" onclick="gentext(),Counter()">Display</button>
+                        <div>
+                            <h4>Let's Start</h4>
+                        </div>
+                        <!-- <span>
+                            <h5></h5>
+                        </span> -->
+                        <div class="game-btn col-lg-5 col-md-4 col-sm-6 order-2   order-2  d-flex justify-content-between">
+
+                            <button id="b1" type="button" class="btn btn-dark btn-lg" onclick="stop(),MythClick()">Myth</button>
+                            <a href="game.html">
+                                <button id="b0" class=" btn btn-warning btn-lg" data-toggle="button"
+                                    aria-pressed="false" autocomplete="off">Replay</button></a>
+                            <button id="b2" type="button" class="btn btn-dark btn-lg" onclick="stop(),FactClick()">Fact</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section class=" game-counter ">
+            <div class="game">
+                <div>
+                    <div id="counter">
+                        <span></span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-10 me-auto mb-4">
+                    <h4 class="text-white mb-3"><a href="index.html">Myth</a>Busters</h4>
+                    <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022
+                        <strong>MythBusters</strong>
+                    </p>
+                    <br>
+
+                </div>
+
+                <div class="col-lg-5 col-8">
+                    <h5 class="text-white mb-3">Blueprint</h5>
+
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="learn.html" class="footer-menu-link">Learn with us! </a>
+                        </li>
+
+                        <li class="footer-menu-item"><a href="game.html" class="footer-menu-link">Play the game</a></li>
+
+                        <li class="footer-menu-item"><a href="https://mediafiles.botpress.cloud/3b93f420-3b18-4a25-9ca1-f579fd170879/webchat/bot.html" target="_blank"   class="footer-menu-link">Chat with us</a></li>
+
+                        <li class="footer-menu-item"><a href="contact.php" class="footer-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-4">
+                    <h5 class="text-white mb-3">Social</h5>
+
+                    <ul class="social-icon">
+
+                        <li><a href="#" class="social-icon-link bi-linkedin"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- JAVASCRIPT FILES -->
+    <script src="count.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
