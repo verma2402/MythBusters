@@ -1,21 +1,4 @@
-<?php
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
 
-    $host = 'localhost';
-    $user = 'root';
-    $pass = '';
-    $dbname = 'feedback';
-
-    $conn = mysqli_connect($host,$user,$pass,$dbname);
-
-    $sql = "INSERT INTO response (name,email,message) values ('$name','$email','$message')";
-    mysqli_query($conn,$sql);
-}
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -101,7 +84,7 @@ if(isset($_POST['submit'])){
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Feedback</a>
+                        <a class="nav-link" href="contact.html">Feedback</a>
                     </li>
                 </ul>
 
@@ -157,7 +140,7 @@ if(isset($_POST['submit'])){
 
             </div>
             <div class="contactForm">
-                <form action="#" method="post">
+                <form action="send.php" method="post">
                     <h2>Send Message</h2>
                     <div class="inputBox">
                         <input type="text" name="name" class="name" id="name" required="required">
@@ -204,7 +187,7 @@ if(isset($_POST['submit'])){
 
                         <li class="footer-menu-item"><a href="https://mediafiles.botpress.cloud/3b93f420-3b18-4a25-9ca1-f579fd170879/webchat/bot.html" target="_blank" class="footer-menu-link">Chat with us</a></li>
 
-                        <li class="footer-menu-item"><a href="contact.php" class="footer-menu-link">Contact</a></li>
+                        <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
                     </ul>
                 </div>
 
